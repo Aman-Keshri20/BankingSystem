@@ -13,7 +13,7 @@ const api = {
         }
     },
     fetchAccounts: async (token) => {
-        const response = await axios.post(`${apiUrl}/banker/accounts`, {}, {
+        const response = await axios.post(`${apiUrl}/banker/accounts`, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
